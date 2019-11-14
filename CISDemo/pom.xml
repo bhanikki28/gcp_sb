@@ -22,7 +22,7 @@
 		<artifactId>spring-cloud-gcp-starter-data-spanner</artifactId> </dependency> 
 		</dependencies> </dependencyManagement> -->
 
-	<!-- 
+	 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -33,7 +33,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>  -->
+	</dependencyManagement>  
 
 	<dependencies>
 
