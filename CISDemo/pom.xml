@@ -49,7 +49,7 @@
 			<artifactId>google-cloud-spanner-hibernate-dialect</artifactId>
 			<version>0.1.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -63,19 +63,9 @@
 		</dependency>
 
 		<!-- Hibernate core dependency -->
-		<!-- 
-		
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>6.0.0.Alpha2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>javax.persistence-api</artifactId>
-			<version>2.2</version>
-		</dependency>  -->
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-core</artifactId> 
+			<version>6.0.0.Alpha2</version> </dependency> <dependency> <groupId>javax.persistence</groupId> 
+			<artifactId>javax.persistence-api</artifactId> <version>2.2</version> </dependency> -->
 
 
 	</dependencies>
@@ -85,6 +75,22 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>0.9.0</version>
+				<configuration>
+
+					<from>
+						<image>openjdk:alpine</image>
+					</from>
+					<to>
+						<image>gcr.io/anz-payments-lab-poc-5b24c4/payments/cisdemo:1</image>
+						<credHelper>gcr</credHelper>
+					</to>
+
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
