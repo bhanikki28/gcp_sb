@@ -46,6 +46,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- 
 			<exclusions>
 				<exclusion>
 					<artifactId>spring-boot-starter-logging</artifactId>
@@ -55,7 +56,7 @@
 					<groupId>org.apache.tomcat</groupId>
 					<artifactId>tomcat-jdbc</artifactId>
 				</exclusion>
-			</exclusions>
+			</exclusions> -->
 		</dependency>
 
 		<dependency>
