@@ -22,12 +22,24 @@
 		<artifactId>spring-cloud-gcp-starter-data-spanner</artifactId> </dependency> 
 		</dependencies> </dependencyManagement> -->
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-gcp-dependencies</artifactId>
+				<version>1.1.2.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-data-spanner</artifactId>
 		</dependency>
 
 		<dependency>
