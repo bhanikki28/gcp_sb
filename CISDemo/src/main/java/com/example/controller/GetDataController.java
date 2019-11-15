@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.dao.TestRepository;
 import com.example.entity.Test;
 
 @RestController
@@ -21,7 +22,7 @@ public class GetDataController {
 	
 	
 	@Autowired
-	com.example.dao.TestRepository testRepository;
+	TestRepository testRepository;
 
 	@GetMapping(path = "/get")
     @Scheduled(fixedRateString = "250")
