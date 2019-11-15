@@ -22,7 +22,7 @@ public class GetDataController {
 	
 	
 	@Autowired
-	TestRepository testRepository;
+	com.example.dao.TestRepository testRepository;
 
 	@GetMapping(path = "/get")
     @Scheduled(fixedRateString = "250")
