@@ -94,22 +94,7 @@
 							</artifactItems>
 						</configuration>
 					</execution>
-					<execution>
-						<phase>initialize</phase>
-						<configuration>
-							<exportAntProperties>true</exportAntProperties>
-							<target>
-								<condition property="tcnative.classifier"
-									value="${os.detected.classifier}-fedora"
-									else="${os.detected.classifier}">
-									<isset property="os.detected.release.fedora" />
-								</condition>
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
+					
 				</executions>
 			</plugin>
 			<plugin>
