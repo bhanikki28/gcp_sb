@@ -49,6 +49,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>org.eclipse.jetty.alpn</groupId>
 			<artifactId>alpn-api</artifactId>
@@ -61,7 +62,7 @@
 			<version>2.0.20.Final</version> <!-- see table for correct version -->
 			<classifier>linux-x86_64</classifier>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency>  -->
 
 
 	</dependencies>

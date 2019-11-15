@@ -25,7 +25,7 @@ public class GetDataController {
 	TestRepository testRepository;
 
 	@GetMapping(path = "/get")
-    @Scheduled(fixedRateString = "250")
+    //@Scheduled(fixedRateString = "250")
 	public String getData() {
 		logger.debug("Inside getData");
 		logger.info("Inside getData");
