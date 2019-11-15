@@ -110,10 +110,10 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>0.9.0</version>
 				<configuration>
-
+					<!-- 
 					<from>
 						<image>openjdk:alpine</image>
-					</from>
+					</from> -->
 					<to>
 						<image>gcr.io/anz-payments-lab-poc-5b24c4/payments/cisdemo</image>
 						<credHelper>gcr</credHelper>
