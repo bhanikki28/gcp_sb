@@ -115,7 +115,7 @@
 						<image>openjdk:alpine</image>
 					</from> -->
 					<to>
-						<image>gcr.io/anz-payments-lab-poc-5b24c4/payments/cisdemo</image>
+						<image>gcr.io/anz-payments-lab-poc-5b24c4/payments/cisdemo3</image>
 						<credHelper>gcr</credHelper>
 					</to>
 
