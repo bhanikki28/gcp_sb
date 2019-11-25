@@ -27,7 +27,6 @@ public class GetDataController {
 	@GetMapping(path = "/get")
     @Scheduled(fixedRateString = "250")
 	public String getData() {
-		logger.debug("Inside getData");
 		logger.info("Inside getData");
 		List<Test> test = this.testRepository.findById(1);
 		Test test1 = test.get(0);
